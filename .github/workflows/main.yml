@@ -1,0 +1,9 @@
+name: "Call smoke in qa-maven-poj"
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  run-qa-maeven-poj-smoke:
+    uses: sudarsana-reddy/qa-maven-poj/blob/main/.github/workflows/smoke.yml@main
+    secrets: inherit
